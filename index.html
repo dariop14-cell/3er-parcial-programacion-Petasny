@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de adopciones</title>
+    <script type="module" src="./main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Sistema de adopciones</h1>
+    </header>
+    <br>
+    <section id="seccion-trabajador" hidden>
+    <h2>Panel de trabajo</h2>
+    <p>Sistema de gestion</p>
+    <button id="btn-cargarAdopcion">
+        Cargar adopcion
+    </button>
+<br>
+    <div id="modal-adopcion" hidden>
+        <h3>Registrar adopcion</h3>
+        <form id="form-adopcion">
+            <div class="campo">
+                <label for="mascota">Seleccionar mascota</label>
+                <select id="mascota">
+                    <option value="">seleccione una mascota</option>
+                </select>
+            </div>
+<br>
+            <div class="campo">
+                <label for="cliente">Seleccionar cliente</label>
+                <select id="cliente">
+                    <option value="">Seleccione un cliente</option>
+                </select>
+            </div>
+<br>
+            <div class="campo">
+                <label for="fecha-adopcion">Fecha de adopcion</label>
+                <input type="date" id="fecha-adopcion">
+            </div>
+            <button type="submit">Registrar adopcion</button>
+            <button type="button" id="btn-cancelar">Cancelar</button>
+        </form>
+    </div>
+    </section>
+
+    <section id="seccion-cliente" hidden>
+        <h2>Mis mascotas</h2>
+        <div id="contenedor-mascotas"></div>
+    </section>
+</body>
+</html>
